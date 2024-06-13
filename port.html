@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+       
+
+
+
+
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        h1{
+            margin-top: 50px;
+            margin-left: 50px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 50px;
+            width: 50%;
+            color: white;
+        }
+        #proj{
+            margin-top: 0px;
+        }
+        .img1{
+            float: right;
+            height: 330px;
+            margin-top: 30px;
+            margin-right: 30px;
+            border-radius: 35px;
+        }
+        .img2{
+            float: right;
+            height: 380px;
+            margin-top: -430px;
+            margin-right: 30px;
+            border-radius: 35px;
+        }
+        .one p{
+            color: white;
+            margin-top: px;
+            margin-left: 70px;
+            width: 45%;
+            font-family: "Poppins", sans-serif;
+            font-size: 20px;
+            text-align: justify;
+        }
+        .two {
+            background-color: rgb(27, 27, 27);
+            padding: 1px;
+            border-radius: 7px;
+            margin: 80px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            
+        }
+        .phrase p{
+            margin-top: -40px;
+            margin-bottom: 40px;
+            color: rgb(244, 99, 99);
+        }
+        .two p{
+            margin-bottom: 40px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .but{
+            margin: 110px;
+            padding:15px 25px;
+            cursor: pointer;
+            font-size: 24px;
+            border: 2px solid rgb(27, 27, 27);
+            background-color: rgb(27, 27, 27);
+            color: white;
+            border-radius: 35px;
+            
+        }
+        .but:hover{
+            background-color: rgb(4, 60, 4);
+            border: 2px solid  rgb(4, 60, 4);
+        }
+        nav{
+            margin-top: 10px;
+        }
+        nav li{
+            
+            display: inline;
+            margin: 3px;
+            padding: 15px;   
+        }
+        nav li:hover{
+            background-color: rgb(243, 43, 43);
+            border-radius: 30px;
+        }
+        nav a{
+            color: white;
+            font-family: "Mukta", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+        }
+        
+        #hom{
+            margin-left: 750px;
+        }
+        h3{
+            color: white;
+            font-size: 30px;
+            margin-left: 70px;
+        }
+        .tools{
+            margin: 500px;
+            margin-top: -530px;
+        }
+        .des{
+            margin: 500px;
+            margin-top: -395px;
+        }
+        .skills{
+            border-radius: 400px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        #ht{
+            margin-left: 70px;
+            
+        }
+        
+        #node{
+            margin-left: 70px;
+           
+        }
+        #db{
+            margin-left: 70px;
+        }
+        #c{
+            margin-left: 70px;
+        }
+        #git{
+            margin-right: 700px;
+            margin-top: -470px;
+            float: right;
+        }
+        #vs{
+            margin-right: 760px;
+            margin-top: -470px;
+            float: right;
+        }
+        #can{
+            margin-right: 700px;
+            margin-top: -470px;
+            float: right;
+        }
+        #fig{
+            margin-right: 760px;
+            margin-top: -470px;
+            float: right;
+        }
+        .four{
+            margin-bottom: 500px;
+        }
+        table{
+            color: white;
+            float: right;
+            margin-top: -680px;
+            margin-right: 20px;
+            text-align: justify;
+            width: 40%;
+            border: 1px solid beige;
+            border-radius: 15px;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+        th{
+            font-size: 30px;
+            text-align: center;
+            padding: 5px;
+        }
+        td{
+            padding: 10px;
+            font-size: 20px;
+            
+            border: 1px solid beige;
+        }
+        tr:hover{
+            background-color: rgb(113, 113, 249);
+        }
+        #uni{
+
+            height: 205px;
+            border-radius: 10px;
+        }
+        div.university{
+            margin-left:100px ;
+            width: 398px;
+            box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+            text-align: center;
+            border-radius: 10px;
+        }
+        div.unitext p{
+            font-size: 15px;
+            width: 100%;
+            margin-left: 4px;
+            padding: 5px;
+        }
+        div.tech{
+            margin-left: -280px;
+            margin-top: -20px;
+        }
+        div.tech p{
+            background-color: rgb(81, 5, 81);
+            width: 40px;
+            margin-left: 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        div.tech p:hover{
+            background-color: red;
+        }
+        #csss{
+            margin-right: -40px;
+        }
+      .domain{
+        display: inline-block;
+        border: 1px solid white;
+        padding: 12px;
+        border-radius: 30px;
+      }
+      div.dom p{
+        width: 300px;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      div.dom p:hover{
+        background-color: rgb(255, 87, 115);
+      }
+      .btn{
+        margin-left: 80px;
+      }
+     
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="hom"><a href="#home">Home</a></li>
+            <li id="abm"><a href="#aboutme">About Me</a></li>
+            <li id="abm"><a href="#skills">Skills</a></li>
+            <li id="pro"><a href="#proj">Projects</a></li>
+            <li id="int"><a href="#interests">Interests</a></li>
+        </ul>
+    </nav>
+    <div >
+    <h1 id="home">Hello, I am Nandani Kirtani</h1>
+    </div>
+    <div class="one">
+        <div class="phrase">
+        <p>EAT()&nbsp;&nbsp;-&nbsp;&nbsp;SLEEP()&nbsp;&nbsp;-&nbsp;&nbsp;CODE()&nbsp;&nbsp;-&nbsp;&nbsp;REPEAT()</p>
+    </div>
+    <div class="two">
+        <img class="img1" src="https://storage.googleapis.com/cdn.konigle.net/blogs/1699771765/202402/why-quantum-computing-may-be-more-intuitive-for-electrical-engineering-.webp?v=1707905902" alt="">
+    <p>
+        Hello! I am currently pursuing my studies at Manav Rachna University, where I have consistently excelled academically, over the first four semesters. My major coursework includes crucial subjects such as Operating Systems, Database Management Systems, Computer Networks, Object-Oriented Programming, and Data Structures and Algorithms. Since beginning my educational journey in 2022, I have been committed to enhancing my knowledge and skills in the field of Computer Science. With an anticipated graduation in 2026, I am eager to apply my education to make meaningful contributions to the technology sector and explore exciting career opportunities.</p>
+    </div>
+    <a class="but" href="https://drive.google.com/file/d/1o6nkLS_-Lbr81cV159Tm5V1DS8zKHMCb/view?usp=sharing" target="_blank">Get My Resume</a>
+    <a class="but" id="one" href="mailto:nandanikirtani99@gmail.com">Hire Me</a>
+    <h1 id="aboutme">About me</h1>
+    <div class="two">
+        <p>
+            I'm Nandani, A Passionate Computer Science Engineering Student With a focus On Web Development. I Have A Strong Command Of Programming Languages Like C, Java, JavaScript, And Python, Which I Utilize To Build Robust And Efficient Applications. I Am Skilled In Frontend Development Using React.Js And Have Expertise In Backend Development Using Node.Js. I Have Hands-On Experience With Databases Like MongoDB For Efficient Data Storage And Retrieval. Additionally, I Am Proficient In Using Figma For UI/UX Design And Have Knowledge Of Working With Open APIs. With A Constant Thirst For Knowledge, I Actively Participate in Hackathons And Workshops To Enhance My Skills
+        </p>
+        <img class="img2" src="https://snu.edu.in/site/assets/files/14210/html-system-website-concept_1.1600x0.webp" alt="">
+    </div>
+    <h1 id="skills">Skills</h1>
+    <div class="two">
+    <h3 class="front">Front-End</h3>
+    <img class="skills" id="ht" src="https://p1.hiclipart.com/preview/930/119/770/html-logo-html5-email-web-feed-theme-orange-line-circle-png-clipart-thumbnail.jpg" alt="htmll">
+    <img class="skills" id="cs" src="https://icon2.cleanpng.com/20180420/gte/kisspng-web-development-cascading-style-sheets-css3-comput-css-5ada20bdc01225.3371933415242446697867.jpg" alt="">
+    <img class="skills" id="js" src="https://www.clipartmax.com/png/small/150-1504620_javascript-logo.png" alt="">
+    <img class="skills" id="rec" src="https://cdn.worldvectorlogo.com/logos/react-1.svg" alt="">
+    <div class="four">
+        <h3 class="back">Back-End</h3>
+        <img id="node" class="skills" src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-1174925.png?f=webp" alt="">
+        <h3 class="data">Databases</h3>
+        <img class="skills" id="db" src="https://i.pngimg.me/thumb/f/720/m2H7i8d3A0N4H7A0.jpg" alt="">
+        <h3 class="prog">Programming Languages</h3>
+        <img class="skills" id="c" src="https://e7.pngegg.com/pngimages/465/779/png-clipart-blue-and-white-c-logo-the-c-programming-language-computer-programming-computer-icons-programmer-blue-angle-thumbnail.png" alt="">
+        <img class="skills" src="https://banner2.cleanpng.com/20190623/yp/kisspng-python-computer-icons-programming-language-executa-5d0f0aa79779a6.6143656815612668556205.jpg" alt="">
+        <img class="skills" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png" alt="">
+        <img class="skills" src="https://logowik.com/content/uploads/images/azure-sql-database6354.jpg" alt="">
+        <h3 class="tools">Tools</h3>
+        <img class="skills" id="git" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStoV8ArenNE0GUskG56bQnPRg1yFI0DWJRbw&usqp=CAU" alt="">
+        <img class="skills" id="vs" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/visual-studio-code-icon.png" alt="">
+        <h3 class="des">Design</h3>
+        <img class="skills" id="can" src="https://logos-world.net/wp-content/uploads/2020/02/Canva-New-Logo.png" alt="">
+        <img class="skills" id="fig" src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/3000/figma-logo-512.png" alt="">
+        <table>
+            <tr>
+            <th>Categories</th>
+            <th>Skills</th>
+            </tr>
+            <tr>
+                <td>Front-End Development</td>
+                <td>HTML, CSS, JavaScript, React</td>
+            </tr>
+            <tr>
+                <td>Back-End Development</td>
+                <td>Node.js</td>
+            </tr>
+            <tr>
+                <td>Databases</td>
+                <td>MongoDB</td>
+            </tr>
+            <tr>
+                <td>Programming Languages</td>
+                <td>C, Python, Java, SQL</td>
+            </tr>
+            <tr>
+                <td>Tools</td>
+                <td>VS Code, GitHub</td>
+            </tr>
+            <tr>
+                <td>Design</td>
+                <td>Canva, Figma</td>
+            </tr>
+        </table>
+    </div></div>
+    <div>
+        <h1 id="proj">Projects</h1>
+        <div class="university">
+            <img id="uni"src="university .jpg" alt="">
+            <div class="unitext">
+                <p>A website with 42 webpages to explore university.</p>
+                <div class="tech">
+                <p >HTML</p>
+                <p id="csss">CSS</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 id="interests">Interests</h1>
+        <div class="two">
+        <p>I am interested in following domains:</p>
+        <div class="dom">
+        <p class="domain">Web Development</p>
+        <p class="domain">UI/UX</p>
+        <p class="domain">Amazon Web Services</p>
+        <p class="domain">Data Analytics</p>
+        <p class="domain">DevOps</p>
+    </div>
+    </div>
+    <div>
+        <a class="btn" href="https://www.linkedin.com/in/nandani-kirtani-368006254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img class="skills" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png" alt=""></a>
+        <a href="https://github.com/Nandanikirtani"><img src="https://as2.ftcdn.net/v2/jpg/02/50/30/59/1000_F_250305943_sDC6la1N1fDl3bLgfLxOkQwItIodsdMb.jpg" alt="" class="skills"></a>
+    </div>
+</div>
+</body>
+</html>
