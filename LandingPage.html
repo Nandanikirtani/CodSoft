@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+        .logo{
+            height: 50px;
+            border-radius: 30px;
+            margin-left: 180px;
+            margin-top: 10px;
+        }
+        .head{
+            float: right;
+            margin-right: 1150px;
+            font-size: 30px;
+            margin-top: 17px;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+        nav{
+            position: fixed;
+            background-color: rgb(189, 171, 197);
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar{
+            margin-left: -100px;
+        }
+        .bare{
+            float: right;
+            margin-right: 350px;
+            margin-top: -60px;
+        }
+        .bar{
+            text-decoration: none;
+            margin: 20px;
+            color: black;
+            font-size: 20px;
+            font-family: "Noto Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:"wdth" 100;
+            padding: 10px;
+        }
+        .bar:hover{
+            background-color: rgb(44, 165, 153);
+            color: white;
+            border-radius: 4px;
+        }
+        .img2{
+            margin-left: -5px;
+            margin-top: 70px;
+            height: 550px;
+            width: 1500px;
+            opacity:1;
+            filter: brightness(40%)
+        }
+        #home h1{
+            font-size: 40px;
+            position: absolute;
+            margin-top: -420px;
+            margin-left: 700px;
+            color: white;
+            font-family: "Lato", sans-serif;
+            font-weight: 600;
+            font-style: normal; 
+            letter-spacing: 1px;
+        }
+        #home p{
+            position: absolute;
+            color: white;
+            margin-top: -300px;
+            margin-left: 700px;
+            margin-right: 100px;
+            font-size: 20px;
+            letter-spacing: 1px;
+            font-weight: 20;
+        }
+        #service h1{
+            font-size: 40px;
+            text-align: center;
+            font-family: "Lato", sans-serif;
+            font-weight: 600;
+            font-style: normal; 
+            margin-bottom: 10px;
+        }
+        
+        .phrase{
+            font-size: 20px;
+            font-family: "Lato", sans-serif;
+            font-weight: 100;
+            font-style: normal; 
+            display: inline-block;
+            padding: 5px;
+            margin: 10px;
+            margin-left: 300px;
+            width: 60%;
+            text-align: center;
+        }
+        #service h2{
+            padding: 50px;
+            display: inline-block;
+            color: white;
+            font-family: "Lato", sans-serif;
+            font-weight: 100;
+            font-style: normal; 
+        }
+        .icon{
+            height: 100px;
+            margin-left: 150px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .icon1{
+            height: 70px;
+            margin-left: 135px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        .app{
+            margin-top: 30px;
+            margin-left: 170px;
+            background-color: blueviolet;
+            width: 25%;
+            height: 250px;
+        }
+        .app:hover{
+            background-color: beige;
+        }
+       .app:hover #mob{
+        color: black;
+       }
+       .dev:hover{
+            background-color: beige;
+        }
+       .dev:hover #web{
+        color: black;
+       }
+       .des:hover{
+            background-color: beige;
+        }
+       .des:hover #ui{
+        color: black;
+       }
+        .dev{
+            margin-top: -250px;
+            margin-left: 570px;
+            background-color: blueviolet;
+            width: 25%;
+            height: 250px;
+        }
+        .des{
+            margin-top: -250px;
+            margin-left: 970px;
+            background-color: blueviolet;
+            width: 25%;
+            height: 250px;
+        }
+        #mob{
+            margin-top: -20px;
+            margin-left: 35px;
+            margin-right: 1000px;
+            width: 100%;
+        }
+        #web{
+            float:right ;
+            margin-top: -2px;
+            margin-right: -130px;
+            width: 100%;
+        }
+        #ui{
+            float: right;
+            margin-top: -150px;
+            margin-right: 50px;
+            
+        }
+        .sdlc h1{
+            font-size: 40px;
+            text-align: center;
+            font-family: "Lato", sans-serif;
+            font-weight: 600;
+            font-style: normal; 
+            margin-bottom: 10px;
+            margin-top: 80px;
+        }
+        .sdlc p{
+            font-size: 20px;
+            font-family: "Lato", sans-serif;
+            font-weight: 100;
+            font-style: normal; 
+            display: inline-block;
+            padding: 5px;
+            margin: 10px;
+            margin-left: 300px;
+            width: 60%;
+            text-align: center;
+        }
+        .sdlc img{
+            height: 600px;
+            width: 80%;
+            margin-left: 170px;
+            margin-top: -10px;   
+    }
+    .choose h1{
+        font-size: 40px;
+            text-align: center;
+            font-family: "Lato", sans-serif;
+            font-weight: 600;
+            font-style: normal; 
+            margin-bottom: 10px;
+            margin-top: 80px;
+    }
+    .flip-card {
+        margin-left: 100px;
+        margin-top: 50px;
+  background-color: transparent;
+  width: 300px;
+  height: 230px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+    font-family: "Lato", sans-serif;
+            font-weight: 100;
+            font-style: normal; 
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+    text-align: justify;
+    
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back .content {
+  padding: 20px; 
+  text-align: left;
+}
+#approach{
+    margin-left: 420px;
+    margin-top: -230px;
+}
+#dom{
+    margin-left: 740px;
+    margin-top: -230px;
+}
+#team{
+    margin-left: 1060px;
+    margin-top: -230px;
+}
+.for{
+    background-color: blueviolet;
+    margin-top: 60px;
+}
+form{
+    padding: 40px;
+    width: 35%;
+    margin-top: 10px;
+    margin-left: 100px;
+    background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+            border: 2px solid #ccc; /* Add border */
+}
+form h2{
+    text-align: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+}
+input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        input[type="file"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .process{
+            float: right;
+            width: 40%;
+            margin-top: -820px;
+            margin-right: 150px;
+        }
+        .process h2{
+            color: white;
+            font-family: "Lato", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 40px;
+        }
+        .process li{
+            color: white;
+            font-family: "Lato", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+            font-size: 20px;
+        }
+        ul{
+            list-style-type: square;
+        }
+        li::marker{
+            font-size: 35px;
+        }
+        .click{
+            background-color: rgb(58, 58, 58);
+            height: 200px;
+            margin-bottom: 140px;
+        }
+        .click h1{
+            padding: 40px;
+            text-align: center;
+            color: white;
+            font-family: "Lato", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+        .click a{
+            text-decoration: none;
+            background-color: #5efaa2;
+            color: black;
+            padding: 20px;
+            border-radius: 35px;
+            margin-left: 700px;
+        }
+        .click a:hover{
+            background-color: #13ef72;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <section id="navv">
+        <div class="navbar">
+        <nav >
+            <img class="logo" src="NK logo.jpg" alt="">
+            <h1 class="head">TechStudio</h1>
+            <div class="bare">
+            <a class="bar" href="#home">Home</a>
+            <a class="bar" href="#service">Services</a>
+            <a class="bar" href="#client">Clients</a>
+            <a class="bar" href="#review">Reviews</a>
+            <a class="bar" href="#contact">Contact Us</a>
+        </div>
+        </nav>
+    </div>
+    </section>
+    <section>
+        <div id="home">
+            <img class="img2" src="https://res.cloudinary.com/highereducation/images/f_auto,q_auto/v1673376079/ComputerScience.org/how-to-become-a-software-dev/how-to-become-a-software-dev.jpg?_i=AA" alt="">
+            <h1>YOUR IDEAS, OUR EXPERTISE <br>TOGETHER, WE BUILD SOFTWARE</h1>
+            <p>We collaborate closely with you to understand your vision and requirements, then leverage our technical skills to transform them into effective, user-friendly applications. From brainstorming to deployment, we make it happen.</p>
+        </div>
+    </section>
+    <section>
+        <div id="service">
+            <h1>Our Services</h1>
+            <p class="phrase">Turning creative visions into robust software products. We partner with you to translate your innovative concepts into robust, scalable solutions. Our team of skilled developers and designers work hand-in-hand with you, ensuring every detail aligns with your vision. Together, we turn your dreams into digital reality, delivering software that stands out in the market.</p>
+            <div class="app">
+            <img class="icon" src="data:image/png;base64,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" alt=""><br>
+            <h2 id="mob">Mobile Development</h2></div>
+            <div class="dev">
+                <img class="icon1" src="data:image/png;base64,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" alt="">
+            <h2 id="web">Web Development</h2>
+        </div>
+        <div class="des">
+            <img class="icon1" src="data:image/png;base64,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" alt="">
+            <h2 id="ui">UI/UX Design</h2>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="sdlc">
+            <h1>Software Development Lifecycle</h1>
+            <p>We follow the Software Development Life Cycle (SDLC) to ensure a systematic, efficient, and high-quality approach to software development, encompassing planning, design, development, testing, deployment, and maintenance phases.</p>
+            <img src="sdlc.png" alt="">
+        </div>
+    </section>
+    <section>
+        <div class="choose">
+            <h1>Why Choose TechStudio</h1>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>Customer Centric</h2>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="content">
+                        <p>We focus on a customer-centric approach to software development, ensuring our solutions are tailored to meet user needs and enhance their experience. Our team prioritizes customer feedback and iterative improvements to deliver highly effective and user-friendly software.</p></div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="approach" class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>360 Approach</h2>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="content">
+                        <p>We implement a 360-degree approach to software development, addressing every aspect from user requirements to post-launch support. By integrating continuous feedback and comprehensive analysis, we ensure our solutions are well-rounded and fully meet customer expectations.</p></div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="dom" class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>Domain Expertise</h2>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="content">
+                        <p>Our 360-degree approach to software development leverages deep domain expertise, ensuring tailored solutions that address specific industry challenges. By integrating comprehensive knowledge and continuous feedback, we deliver highly effective and user-focused software.</p></div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="team" class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>A class Team</h2>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="content">
+                        <p>Our 360-degree approach to software development is driven by a world-class team with deep domain expertise, ensuring tailored solutions that address specific industry challenges. By integrating comprehensive knowledge and continuous feedback, we deliver highly effective and user-focused software.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="for">
+            <br>
+            <form action="/submit_project" method="post" enctype="multipart/form-data">
+                <h2>Contact Us</h2>
+                <label for="first_name">First Name:</label><br>
+                <input type="text" id="first_name" name="first_name" required><br><br>
+        
+                <label for="last_name">Last Name:</label><br>
+                <input type="text" id="last_name" name="last_name" required><br><br>
+        
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+        
+                <label for="description">Project Description:</label><br>
+                <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+        
+                <label for="project_file">Project File:</label><br>
+                <input type="file" id="project_file" name="project_file" required><br><br>
+        
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            <div class="process">
+            <h2>Our Process</h2>
+            <ul>
+                <li>Acknowledge Request:
+                Send a confirmation email notifying the successful receipt of the request and initiation of the process.</li><br><br><br>
+                <li>Analyze Requirements:
+                    Solution advisor reviews and analyzes the requirements, reaching back to you within 3 business days.
+                    </li><br><br><br>
+                    <li>Ensure Confidentiality:
+                        Optionally sign a mutual NDA within 1-2 business days to guarantee the highest level of confidentiality.</li><br><br><br>
+                    <li>Provide Project Estimation:
+                        Business development manager presents an initial project estimation, ballpark figures, or project recommendations within 3-5 days.</li>
+            </ul>
+
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="click">
+            <h1>RECEIVE STRATEGIC CONSULTING FROM OUR EXPERTS</h1>
+            <a href="">Click Here</a>
+        </div>
+    </section>
+
+</body>
+</html>
